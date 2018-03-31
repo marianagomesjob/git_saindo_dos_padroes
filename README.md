@@ -9,7 +9,7 @@ Nota: Trecho citado por Anna Maria Knobel em "Moreno Em Ato", atribuído a Clari
 
 GPL-3.0 © Mariana Gomes
 
-</hr>
+<hr>
 
 utilizei reveal.js para criação da apresentação - License | MIT licensed Copyright (C) 2017 Hakim El Hattab, http://hakim.se
 

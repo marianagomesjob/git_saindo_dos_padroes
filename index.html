@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Git - Saindo dos Padrões</title>
+
+	<meta name="description" content="GIT SAINDO DOS PADRÕES">
+	<meta name="author" content="MARIANA GOMES">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/mariana_costumizado.css" id="theme">
+
+	<!-- Theme used for syntax highlighting of code-->
+	<!--	<link rel="stylesheet" href="css/theme/beige.css" id="theme">-->
+	<!--	<link rel="stylesheet" href="css/theme/blood.css" id="theme">-->
+	<!--	<link rel="stylesheet" href="css/theme/moon.css" id="theme">-->
+	<!--	<link rel="stylesheet" href="css/theme/night.css" id="theme">-->
+	<!--	<link rel="stylesheet" href="css/theme/serif.css" id="theme">-->
+	<!--	<link rel="stylesheet" href="css/theme/sky.css" id="theme">-->
+	<!--	<link rel="stylesheet" href="css/theme/solarized.css" id="theme">-->
+	<!--	<link rel="stylesheet" href="css/theme/white.css" id="theme">-->
+
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+
+
+
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+
+	<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+
+	<div class="reveal">
+
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+			<section>
+
+
+				<img src="https://git-scm.com/images/logo@2x.png" width="220" height="92" alt="Git">
+
+				<h2>saindo dos Padrões</h2>
+				<p>
+					<small>Created by
+						<!-- Adicionar link do github -->
+						<a href="#">Mariana Gomes</a>
+					</small>
+				</p>
+			</section>
+
+			<section>
+				<h2>Quem sou eu</h2>
+				<table border="1">
+
+					<tr>
+						<td td rowspan="4">
+							<ul>
+								<li>Mariana Gomes</li>
+								<li>Cientista da computação</li>
+								<li>Evangelista do PHPWomenBR</li>
+								<li>Amante de meetups e hackathons</li>
+
+							</ul>
+						</td>
+						<td rowspan="4">
+							<center>
+								<img data-src="https://avatars2.githubusercontent.com/u/21350032?s=400&v=4" width="180" height="180" alt="logo do windows">
+							</center>
+						</td>
+
+					</tr>
+				</table>
+			</section>
+			<section>
+				<h3>O que é Controle de versão?</h3>
+				Sistema que registra as mudanças feitas em um arquivo ou um conjunto de arquivos ao longo do tempo de forma que você possa
+				recuperar versões específicas.
+
+			</section>
+			<section>
+				<h2>Decisão sábia!</h2>
+
+				<ul>
+					<li>Reverter um arquivos ou projeto inteiro para um estado anterior.</li>
+					<li>Comparar mudanças feitas ao decorrer do tempo.</li>
+					<li>Ver quem foi o último a modificar algo que pode estar causando problemas.</li>
+					<li>Pode controlar tudo sem maiores esforços.</li>
+				</ul>
+
+			</section>
+			<section>
+				<h2>É Importante por qual motivo?</h2>
+				<ul>
+					<li>Requisito e diferencial para atuar na área de TI.</li>
+					<li>Ajuda organizar o desenvolvimento do projeto entre os desenvolvedores.</li>
+					<li>Possibilidade de várias pessoas trabalharem no mesmo projeto.</li>
+					<li>Contribuir para outros projetos abertos.</li>
+				</ul>
+			</section>
+			<section>
+				<h2>Tipos de controles de versão</h2>
+				<table border="1">
+					<tr>
+						<td>
+							<img src="img/git.PNG" width="180" height="100">
+						</td>
+						<td>
+							<img src="img/mercurial.PNG" width="180" height="100">
+						</td>
+						<td>
+							<img src="img/sub.PNG" width="180" height="100">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="img/TFS.PNG" width="250" height="100">
+						</td>
+						<td>
+							<img src="img/tortoise-svn-logo.PNG" width="180" height="100">
+						</td>
+
+					</tr>
+				</table>
+			</section>
+
+			<section>
+				<h2>
+					<a href="https://git-scm.com/doc">GIT</a> que magia é essa?</h2>
+			</section>
+
+			<section>
+				<h2>Git e github são diferentes</h2>
+				<table border="1">
+					<tr>
+						<td>
+							<ul>
+								<li>Git é o sistema de versionamento</li>
+								<li>Git envia comandos para gerenciar seus arquivos</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Github serviço de repositório.</li>
+								<li>Github armazena seus códigos.</li>
+								<li>Github pode ser usado usando os comandos do git.</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<center>
+								<img src="img/git.PNG" width="180" height="100">
+							</center>
+						</td>
+						<td>
+							<center>
+								<img src="img/Octocat.PNG" width="140" height="120">
+							</center>
+						</td>
+
+					</tr>
+				</table>
+
+			</section>
+
+			<section>
+				<h2>Empresa que usa o git</h2>
+				<p>
+					<img src="img/empresausagit.png" alt="">
+				</p>
+			</section>
+
+			<section>
+				<h2>Instalação do GIT</h2>
+				<ul>
+					<li>Windows: https://git-for-windows.github.io/</li>
+					<li>Mac: Acesse https://git-scm.com/download/mac</li>
+					<li>Linux:
+						<ul>
+							<li>yum install git-core (Fedora)</li>
+							<li>apt-get install git (Debian-likes)</li>
+						</ul>
+				</ul>
+				</ul>
+			</section>
+			<section>
+				<h2>Usando o terminal</h2>
+				<p>Alguns comando básicos</p>
+				<ul>
+					<li>Cd – acessa as pastas </li>
+					<li>Ls – lista arquivos em um diretório. </li>
+				</ul>
+			</section>
+			<section>
+				<h2>Usando o github</h2>
+				<center>
+					<img src="img/Octocat.PNG" width="320" height="300">
+				</center>
+			</section>
+			<section>
+				<h2>FORK</h2>
+				<p>Para contribuir com outros projetos abertos no GitHub faremos um FORK</p>
+				<p>
+					<img src="img/1_fork.png" alt="">
+				</p>
+			</section>
+			<section>
+				<h2>FORK</h2>
+				<p>Agora você tem uma cópia do projeto listada em sua lista original de repositórios</p>
+				<p>
+					<img src="img/2_fork.png" alt="">
+				</p>
+			</section>
+			<section>
+				<h2>GIT INIT</h2>
+				<p>Retorna a mensagem de inicialização de repositório</p>
+				<p>
+					<img src="img/3_gitinit.png" alt="">
+				</p>
+			</section>
+			<section>
+				<h2>GIT Clone</h2>
+				<p>baixar o repositório para sua máquina</p>
+				<p>
+					<img src="img/3_clone.png" alt="">
+				</p>
+			</section>
+			<section>
+				<h2>GIT Clone</h2>
+				<p>git clone (link do repositório)</p>
+				<p>
+					<img src="img/3_noterminal.png" alt="">
+				</p>
+			</section>
+			<section>
+				<h2>Git add . e Git Status</h2>
+				<ul>
+					<li>Para adicionar as alterações do projeto usamos o Git add .</li>
+					<li>Podemos usar o git status para checar os arquivos que alteramos.</li>
+				</ul>
+				<p>
+					<img src="img/3_gitadd.png" alt="">
+				</p>
+			</section>
+			<section>
+				<h2>GIT COMMIT</h2>
+				<ul>
+					<li>Enviaremos os arquivos para o repositório de origem usaremos o commit.</li>
+					<li>Salva as alterações no repositório com um mensagem.</li>
+				</ul>
+				<p>
+					<img src="img/3_gitcommit.png" alt="">
+				</p>
+			</section>
+			<section>
+				<h2>GIT PUSH</h2>
+				<ul>
+					<li>Envia as novas modificações para o repositório de origem (origin)</li>
+				</ul>
+				<p>
+					<img src="img/3_gitpush.png" alt="">
+				</p>
+			</section>
+			<section>
+				<h2>GIT LOG</h2>
+				<ul>
+					<li>Exibe todos os históricos de alterações do projeto. </li>
+				</ul>
+				<p>
+					<img src="img/3_gitlog.png" alt="">
+				</p>
+			</section>
+			<section>
+				<h2>GIT BRANCH/CHECKOUT</h2>
+				<ul>
+					<li>Permite que várias possam trabalhar em um mesmo projeto em áreas diferentes são chamadas de branch. </li>
+					<li>Todas as alterações são feitas por padrão em uma branch local chamada master.</li>
+				</ul>
+				<p>
+					<img src="img/3_gitbrach.png" alt="">
+				</p>
+			</section>
+
+
+			<section>
+				<h2>Criando GIT BRANCH</h2>
+				<p>
+					git checkout -b beta
+				</p>
+			</section>
+			<section>
+				<h2> GIT BRANCH subindo modificações!</h2>
+				<p>
+					git push origin beta
+				</p>
+			</section>
+
+
+			<section>
+				<h2>GIT MERGE</h2>
+				<p>Realiza a junção das alterações da Branch beta com a master </p>
+				<p>
+					<img src="img/3_gitmerge.png" alt="">
+				</p>
+			</section>
+
+			<section>
+				<h2>GIT PULL</h2>
+				<p>Baixa código atualizado do repositório remoto.</p>
+				<p>
+					<img src="img/3_PULL.png" alt="">
+				</p>
+			</section>
+
+			<section>
+				<h2>GIT DIFF</h2>
+				<ul>
+					<li>Mostra as diferenças no conteúdo dos arquivos/diretório.</li>
+					<li>Resultado em vermelho é o que estava escrito originalmente.</li>
+					<li>Em verde o que foi alterado.</li>
+				</ul>
+				<p>
+					<img src="img/3_gitdiff.png" alt="">
+				</p>
+			</section>
+			<section>
+				<h2>GIT HELP</h2>
+				<ul>
+					<li>git help: mostra resumo dos principais comandos</li>
+					<li>git help –a: mostra todos os comandos do git</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>GIT IGNORE</h2>
+				<ul>
+					<li>Arquivos restritos para versionamento</li>
+					<li>Arquivos de logs</li>
+					<li>Arquivos de multimídias</li>
+					<li>Arquivos gerados pelos sistemas</li>
+				</ul>
+				<p>
+					<img src="img/3_gitignore.png" alt="">
+				</p>
+			</section>
+			<section>
+				<h2>Pull request</h2>
+				<p>Requisição feita para o administrador daquele repositório para que possa revisar ou não as alterações realizadas.</p>
+				<p>
+					<img src="img/3_pullRequest.png" alt="">
+				</p>
+			</section>
+			<section>
+				<h2>Links utéis</h2>
+				<ul>
+					<li><a href="https://try.github.io">Git em 15 minutos</a></li>
+					<li><a href="https://help.github.com/articles/git-and-github-learning-resources/">Documentação github</a></li>
+					<li><a href="https://git-scm.com/book/pt-br/v2">Livro GIT</a></li>
+
+				</ul>
+			</section>
+			<section style="text-align: left;">
+				<h1>Obrigada!</h1>
+				<p>Twitter:@mmariana_gomes</p>
+				<p>telegram:@mmariana_gomes</p>
+				<p>github:@marianagomesjob</p>
+
+			</section>
+
+		</div>
+
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+
+		// More info https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			history: true,
+			center: true,
+
+			transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+			// More info https://github.com/hakimel/reveal.js#dependencies
+			dependencies: [
+				{ src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
+				{ src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+				{ src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+				{ src: 'plugin/search/search.js', async: true },
+				{ src: 'plugin/zoom-js/zoom.js', async: true },
+				{ src: 'plugin/notes/notes.js', async: true }
+			]
+		});
+
+	</script>
+
+</body>
+
+</html>
